@@ -1,0 +1,185 @@
+body.landing {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+body.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("granite-texture.jpg");
+    background-size: 100%;
+}
+
+div.banner{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin: -25px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    a {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-variation-settings: "width" 100;
+        font-size: 18px;
+        text-align: center;
+        color: #3356a4;
+    }
+}
+
+div.board {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    column-gap: 50px;
+    grid-template-rows: repeat (5,150px);
+    align-self: center;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+img.board {
+    width: 150px;
+    margin: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+div.archetype {
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 18px;
+    line-height: 18px;
+    width: 75%;
+    text-align: justify;
+    color: #3356a4;
+    padding: 25px;
+    margin-bottom: -25px;
+    position: sticky;
+    bottom: 0;
+    align-self: center;
+    h1 {
+        color:#f05160;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.archetype {
+        padding-bottom: 150px;
+    }
+}
+
+div.albumInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    align-self: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    div.albumInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, auto);
+        align-self: center;
+        align-items: center;
+    }
+}
+
+div.albumInfoCard {
+    background-color: #f05160;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 18px;
+    line-height: 18px;
+    width: 75%;
+    text-align: justify;
+    color: white;
+    padding: 25px;
+    margin: 25px;
+    h1 {
+        color:white;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+div.homepageTitle {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    padding-top: 25px;
+}
+
+div.subtitle {
+     font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 45px;
+    line-height: 45px;
+    width: 500px;
+    max-width: 50%;
+    text-align: justify;
+    color: #f05160;
+    padding-top: 25px;
+    padding-bottom:25px;
+}
+
+div.desc {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 24px;
+    line-height: 24px;
+    width: 750px;
+    max-width: 75%;
+    text-align: justify;
+    color: #3356a4;
+    padding-top: 25px;
+    padding-bottom:25px;
+}
+
+div.menu {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 18px;
+    line-height: 38px;
+    width: auto;
+    text-align: center;
+    color: #f05160;
+    a.menu {
+        color: #f05160;
+    }
+    padding-top: 25x;
+    padding-bottom: 25px;
+}
