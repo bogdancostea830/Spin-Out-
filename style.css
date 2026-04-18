@@ -10,7 +10,7 @@ body.board {
     flex-direction: column;
     justify-content: center;
     background-image: url("granite-texture.jpg");
-    background-size: 100%;
+    background-size: 100vw;
 }
 
 div.banner{
@@ -36,14 +36,48 @@ div.banner{
     }
 }
 
+div.footer{
+    display: flex;
+    background-color: #f05160;
+    padding: 5px;
+    padding-bottom: 15px;
+    width: 100vw;
+    position: sticky;
+    bottom: 0;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
 div.board {
     display: grid;
     grid-template-columns: repeat(5, 150px);
     column-gap: 50px;
-    grid-template-rows: repeat (5,150px);
+    grid-template-rows: repeat(4, 150px);
+    row-gap: 50px;
     align-self: center;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    div.board {
+        grid-template-columns: 200px 200px;
+        column-gap: 50px;
+        grid-template-rows: repeat(10, 200px);
+    }
 }
 
 img.board {
@@ -52,36 +86,47 @@ img.board {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
+img.board:hover {
+    width: 130px;
+    border: 10px solid #f05160;
+}
+
+@media (max-width: 1000px) {
+    img.board {
+        width: 200px;
+    }
+    img.board:hover {
+        width: 180px;
+    }
+}
+
 div.archetype {
     background-color: white;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "width" 100;
-    font-size: 18px;
-    line-height: 18px;
-    width: 75%;
+    font-size: 24px;
+    line-height: 24px;
+    width: 750px;
+    max-width: 75%;
     text-align: justify;
     color: #3356a4;
     padding: 25px;
-    margin-bottom: -25px;
-    position: sticky;
-    bottom: 0;
+    padding-top: 50px;
+    margin: 25px;
+    margin-bottom: 0;
     align-self: center;
     h1 {
         color:#f05160;
         font-weight: 900;
         font-size: 30px;
-        line-height: 30px;
+        line-height: 32px;
         text-align: center;
     }
-}
-
-@media (max-width: 1000px) {
-    div.archetype {
-        padding-bottom: 150px;
+    a {
+        color: #f05160;
     }
 }
 
@@ -111,8 +156,8 @@ div.albumInfoCard {
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "width" 100;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     width: 75%;
     text-align: justify;
     color: white;
@@ -122,8 +167,12 @@ div.albumInfoCard {
         color:white;
         font-weight: 900;
         font-size: 30px;
-        line-height: 30px;
+        line-height: 32px;
         text-align: center;
+    }
+    a {
+        color: white;
+        font-weight: 500;
     }
 }
 
@@ -131,11 +180,11 @@ div.homepageTitle {
     width: 50%;
     max-width: 500px;
     height: auto;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 div.subtitle {
-     font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
